@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+
 import home1 from '../img/me.jpg';
 import {About, Description, Image, Hide} from "../style"
 import {Link} from 'react-router-dom';

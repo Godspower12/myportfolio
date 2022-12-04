@@ -2,7 +2,7 @@ import React from 'react';
 import "../components/styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cvpic from "../img/cvpic.jpg"
-import { faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot} from '@fortawesome/free-solid-svg-icons'
 //animation 

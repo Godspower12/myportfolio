@@ -1,8 +1,6 @@
 import React from 'react'
-import {About, Description, Hide} from "../style"
+import {About} from "../style"
 import styled from "styled-components";
-import {useInView} from 'react-intersection-observer';
-import {useAnimation} from 'framer-motion';
 import {scrollReveal} from '../components/Animation'
 import {useScroll} from './useScroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

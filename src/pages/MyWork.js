@@ -1,8 +1,7 @@
 //imgs
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import  styled  from "styled-components";
 import "../components/styles.css";
-
 import {motion} from 'framer-motion';
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from "../components/Animation"
 import {useScroll} from '../components/useScroll';
@@ -13,9 +12,6 @@ const MyWork = () => {
   const [element2, control2] = useScroll();
   const [element3, control3] = useScroll();
   const [element4, control4] = useScroll();
-  const [element5, control5] = useScroll();
-  const [element6, control6] = useScroll();
-  const [element7, control7] = useScroll();
     return (
         
          <Work exit = "exit" variants={pageAnimation} 
@@ -177,7 +173,7 @@ const MyWork = () => {
                       
                    
                     <div className="btn">
-                    <a href='#'><button style={{color: "black" , display: "flex", "align-items": "center", "margin-left": "40%", "margin-top": "20%"}}>Work in progress...</button></a>
+                    <button style={{color: "black" , display: "flex", "align-items": "center", "margin-left": "40%", "margin-top": "20%"}}>Work in progress...</button>
                    </div>
                  </div>
                     
