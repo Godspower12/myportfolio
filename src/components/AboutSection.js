@@ -87,6 +87,11 @@ justify-content: space-evenly;
        font-size: 10px; 
        justify-content: space-between;  
 }
+ @media screen and (max-width: 375px){
+       font-size: 10px; 
+       margin-left: 10px;  
+}
+}
 `
 
 export default AboutSection
