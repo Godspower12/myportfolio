@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.hamburger-container {
+    margin-left: 5px;
+    position: fixed;
+    top: 5px;
+    border-radius: 5px;
+    display: none;
+    z-index: 5;
+    width: 100%;
+    margin-left: -45%;
   }
-}
+  .hamburger-cont {
+    display: none;
+    width: 70%;
+    position: absolute;
+    height: 100vh;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+  .header-container .checkbox {
+   height: 40px;
+    width: 40px;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  .header-container  .hamburger-box {
+    height: 40px;
+    z-index: 1;
+    width: 40px;
+    border-radius: 5px;
+    background: white;
+    top: 0;
+    left: 0;
+    padding: 0px 5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  .header-container .hamburger-box > .hamburger {
+   position: relative;
+   z-index: 1;
+    background: black;
+    width: 100%;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+  }
+  .header-container .hamburger-box > .hamburger::before, 
+  .header-container .hamburger-box > .hamburger::after {
+   content: '';
+    position: absolute;
+    background: black;
+    top: -10px;
+    width: 100%;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-container .hamburger-box > .hamburger::after {
+    top: 10px;
+  }
+  
+   .checkbox:checked ~ .hamburger-box > .hamburger {
+    transform: rotate(135deg);
+  }
+   .checkbox:checked ~ .hamburger-box > .hamburger:before,
+   .checkbox:checked ~ .hamburger-box > .hamburger:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  .checkbox:checked:hover ~ .hamburger-box > .hamburger {
+    transform: rotate(225deg);
+  }
+  
+  .menu-background {
+    transform: translateX(-100%);
+    transition: all 1s ease;
+  }
+  
+   .checkbox:checked ~ .menu-background {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* overflow: hidden; */
+    transform: translateX(0);
+    
+  } 
+
+ 
+  .hamburger-contents {
+    width: 100%;
+    height: 100vh;
+  }
+   .hamburger-contents > ul {
+    width: 100%;
+    height: 100vh;
+    margin-left: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  .hamburger-contents > ul > li{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   }
-}
+  .hamburger-contents > ul > li> a{
+   font-weight: 400;
+   font-size: large;
+  } 
+  
+  @media(max-width: 425px) {
+     
+    .hamburger-container {
+        display: block;
+      }
+ 
+      .checkbox:checked ~ .hamburger-cont {
+        display: block;
+        
+      }
+      
+    } 
+
+   
