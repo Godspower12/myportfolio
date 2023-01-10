@@ -3,10 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faCopyright } from '@fortawesome/free-solid-svg-icons'; 
 
 import "./styles.css";
 const Footer = () => {
   return (
+     <div className="footer-container">
+      
     <div className='footer'>
       
         <div className="linkedin">
@@ -25,7 +28,15 @@ const Footer = () => {
         </a>
         
         </div>
+
+        
     </div>
+
+    <div className="copyright">
+    <p><FontAwesomeIcon icon = {faCopyright} color = "#28A4D9" size="sm"/>
+            2023 Godspower Felix. All rights reserved</p>
+        </div>
+     </div>
   )
 }
 

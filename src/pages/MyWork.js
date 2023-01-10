@@ -8,8 +8,6 @@ import {useScroll} from '../components/useScroll';
 
 const MyWork = () => {
   const [element, control] = useScroll();
-  const [element1, control1] = useScroll();
-  const [element2, control2] = useScroll();
   const [element3, control3] = useScroll();
   const [element4, control4] = useScroll();
     return (
@@ -82,61 +80,9 @@ const MyWork = () => {
             
             </Movie> 
 
-            <Movie ref = {element1} variants = {fade} animate = {control1} initial = 'hidden'>
-                <h2>Todo List</h2>
-                <motion.div variants = {lineAnim} className="line"></motion.div>
-              
-               
-                
-                <div className='apple-mart'>
-                      <div className="image-container">
-                      <img src="https://i.gyazo.com/efdb3880188d59d5fb9e0d47ed28c8b9.png" alt='light-dark-mode'/>
-                      
-                 <div className='apple-overview'>
-                   <div className="apple-overview-contents">
-                   <div className="about-project">
-                        <p>Todo List is a utility web app that enables users to add various tasks to be done, mark tasks that are done and ones not done and also edit and delete tasks. </p>
-                    </div>
-                    <div className="btn">
-                    <a href='https://gptodolist.netlify.app/'><button>Demo</button></a>
-                    <a href='https://github.com/Godspower12/todolist'><button>Source Code</button></a>
-                   </div>
-                 </div>
-                 </div>
-                 </div>
-                 </div>
-
-                
-            </Movie> 
+            
 
 
-             <Movie ref= {element2} variants = {fade} animate = {control2} initial = 'hidden'>
-                <h2>Multi-step Application Form</h2>
-                <motion.div variants = {lineAnim} className="line"></motion.div>
-                
-                
-                <div className='apple-mart'>
-                      <div className="image-container">
-                
-                <img src="https://i.gyazo.com/b823486852392e82eb6e64952eb73f51.png" alt='form-validation'/>
-                      
-                 <div className='apple-overview'>
-                   <div className="apple-overview-contents">
-                   <div className="about-project">
-                        <p>Multi step form is an application form with multiple stages </p>
-                    </div>
-                    <div className="btn">
-                    <a href='https://applemart.netlify.app/'><button>Demo</button></a>
-                    <a href='https://github.com/Godspower12/apple-mart/'><button>Source Code</button></a>
-                   </div>
-                 </div>
-                 </div>
-                 </div>
-                 </div>
-
-
-            </Movie>
-             
             <Movie ref = {element3} variants = {fade} animate = {control3} initial = 'hidden'>
                 <h2>Chat messenger</h2>
                 <motion.div variants = {lineAnim} className="line"></motion.div>
