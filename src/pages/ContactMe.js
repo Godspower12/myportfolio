@@ -31,13 +31,13 @@ const ContactMe = () => {
           <Hide>
             <Social variants = {titleAnim}>
             <FontAwesomeIcon icon = {faPhone} color = "black" size="lg" />
-                   <h2>+2348062122835</h2>
+                   <h3>+2348062122835</h3>
             </Social>
             </Hide>
                <Hide>
                 <Social variants = {titleAnim}>
                 <FontAwesomeIcon icon = {faLocationDot} color = "black" size="lg" />
-                   <h2>Abuja, Nigeria</h2>
+                   <h3>Abuja, Nigeria</h3>
               </Social>
               </Hide>
             </SocialMsg>
@@ -52,6 +52,13 @@ const ContactStyle = styled(motion.div)`
 padding: 5rem 10rem;
 color: #353535;
 min-height: 90vh;
+
+@media screen and (max-width: 425px) {  
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+
+}
 `;
 const Title = styled.div`
 margin-bottom: 4rem;
@@ -98,7 +105,15 @@ h3 {
   font-size: 2rem;
   color: #353535;
   margin-left: 5px;
- }
+  
+}
+@media screen and (max-width: 425px) {
+  h3 {
+    font-size: 2rem;  
+  }
+}
+
+
 `;
 
 export default ContactMe;

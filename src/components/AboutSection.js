@@ -15,7 +15,7 @@ function AboutSection() {
                 <motion.div>
                     <Hd>
                     <motion.h3 variants={fade}><span >&lt;h1&gt;</span></motion.h3>
-                        <motion.h2 variants={titleAnim}>Hello, I am</motion.h2>
+                        <motion.h2 variants={titleAnim}>Hi, I am</motion.h2>
                     </Hd>
                      <Hd>
                      <motion.h2 variants={titleAnim} 
@@ -28,7 +28,7 @@ function AboutSection() {
                         ></motion.h2>
                     </Hd>
                 </motion.div>
-                <motion.p variants={fade}>I specialize in creating highly responsive websites and web applications.</motion.p>
+                <motion.h4 variants={fade}> UI/UX Designer and frontend web developer</motion.h4>
                <Btn>
                <Link to ='/contactMe'><motion.button variants={fade}>Contact Me</motion.button></Link>
                 <Link to ='/cv'><motion.button variants={fade}>CV</motion.button></Link>
@@ -51,7 +51,10 @@ justify-content: space-between;
 padding: 5rem 10rem;
 color: white;
 
-
+h4 {
+    color: white;
+    font-size: 2rem
+}
 @media (max-width: 425px){
     display: flex;
     flex-direction: column;

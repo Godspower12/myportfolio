@@ -19,32 +19,30 @@ const ServicesSection = () => {
     
      <Services variants={scrollReveal} animate = {control} initial = 'hidden' ref={element}> 
          <Desc>
-            <h2>My <span>Skills</span></h2> 
+            <h2><span> My Skills</span></h2> 
              <Cards>
                  <Card>
                      <div className="icon">
                      <FontAwesomeIcon icon = {faHtml5} color = "#F06529" size="lg" spin/>
-                    <h3>HTML5</h3>
                      </div>
                   
                  </Card>
                  <Card>
                      <div className="icon">
                      <FontAwesomeIcon icon = {faCss3} color = "#28A4D9" size="lg" spin/>
-                   <h3>CSS</h3>
+
                      </div>
                      
                  </Card>
                  <Card>
                      <div className="icon">
                      <FontAwesomeIcon icon = {faJsSquare} color = "#EFD81D" size="lg" spin/>
-                   <h3>JAVASCRIPT</h3>
                      </div>
                  </Card>
                  <Card>
                      <div className="icon">
                      <FontAwesomeIcon icon = {faReact} color = "#5ED4F4" size="lg" spin/>
-                   <h3>React/Angular/vue</h3>
+                   
                      </div>
                  </Card>
                 
@@ -81,7 +79,13 @@ const ServicesSection = () => {
 }
 
 
-const Services = styled(About)`
+const Services = styled.div`
+display: flex;
+height: 100%;
+width: 100%;
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 5%;
 h2 {
   padding-bottom : 5rem; 
 }
@@ -94,6 +98,10 @@ padding: 2rem 0rem 4rem 0rem
 @media (max-width: 425px){
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: -5%;
 `;
 const Desc = styled.div`
 width: 50%
@@ -104,15 +112,20 @@ width: 50%
 const Cards = styled.div`
 display: flex;
  flex-wrap: wrap;
+ justify-content: space-around;
  @media (max-width: 800px){
-        justify-content: center;
-        margin-left: -50px; 
+        // justify-content: center;
+        // margin-left: -50px;
+    h3 {
+      display: none 
+
+    } 
       };
 
  `;
 
 const Card = styled.div`
-flex-basis: 15rem;
+// flex-basis: 15rem;
 margin-bottom: 20px;
 @media (max-width: 800px){
         margin-left: 10%; 

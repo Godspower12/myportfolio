@@ -5,11 +5,14 @@ import "../components/styles.css";
 import {motion} from 'framer-motion';
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from "../components/Animation"
 import {useScroll} from '../components/useScroll';
+import Snap from "../img/desktop-design.jpg"
+import ChatPic from "../img/chatapp.png"
 
 const MyWork = () => {
   const [element, control] = useScroll();
   const [element3, control3] = useScroll();
   const [element4, control4] = useScroll();
+  const [element5, control5] = useScroll();
     return (
         
          <Work exit = "exit" variants={pageAnimation} 
@@ -22,8 +25,10 @@ const MyWork = () => {
              <Frame3 variants={slider}></Frame3>
              <Frame4 variants={slider}></Frame4>
              </motion.div>
-             <Movie>
-                 
+             
+
+            
+             <Movie ref = {element} variants = {fade} animate = {control} initial = 'hidden'>
                  <motion.h2 variants={fade}>Apple Mart</motion.h2>
                  <motion.div variants={lineAnim} className="line"></motion.div>
                  
@@ -38,7 +43,7 @@ const MyWork = () => {
                         <p>Apple mart is an e-commerce website for sales of apple products</p>
                     </div>
                     <div className="btn">
-                    <a href='https://apple-marts.netlify.app/'><button>Demo</button></a>
+                    <a href='https://apple-marts.netlify.app/'><button>Preview</button></a>
                     <a href='https://github.com/Godspower12/apple-marts/'><button>Source Code</button></a>
                    
 
@@ -54,31 +59,7 @@ const MyWork = () => {
                  
            </Movie>
 
-           <Movie ref = {element} variants = {fade} animate = {control} initial = 'hidden'>
-                <h2>News App</h2>
-                <motion.div variants = {lineAnim} className="line"></motion.div>
-                
-               
-
-                <div className='apple-mart'>
-                      <div className="image-container">
-                      <img src="https://i.gyazo.com/96dd370b8a1ff6558775de9d0295318e.png" alt='pacman'/>
-                      
-                 <div className='apple-overview'>
-                   <div className="apple-overview-contents">
-                   <div className="about-project">
-                        <p>News app is a media website that provides up to date news in and around Nigeria across various sectors of the economy. Users can react to various news of their choice.</p>
-                    </div>
-                    <div className="btn">
-                    <a href='https://current-newsapp.netlify.app/'><button>Demo</button></a>
-                    <a href='https://github.com/Godspower12/news-app'><button>Source Code</button></a>
-                   </div>
-                 </div>
-                 </div>
-                 </div>
-                 </div>
-            
-            </Movie> 
+           
 
             
 
@@ -99,7 +80,7 @@ const MyWork = () => {
                         <p>Chat messenger is a social web app that enables users performs real time chat, users with the link can create new account and when logged in can see various users and can decide to chat with any user of their choice.</p>
                     </div>
                     <div className="btn">
-                    <a href='https://chatmessenger-app.netlify.app/'><button>Demo</button></a>
+                    <a href='https://chatmessenger-app.netlify.app/'><button>Preview</button></a>
                     <a href='https://github.com/Godspower12/apple-mart/'><button>Source Code</button></a>
                    </div>
                  </div>
@@ -109,27 +90,69 @@ const MyWork = () => {
 
 
             </Movie> 
-            <Movie ref = {element4} variants = {fade} animate = {control4} initial = 'hidden'>
-                <h2>Contact List</h2>
-                <motion.div variants = {lineAnim} className="line"></motion.div>
-                
-                
-                      <div className='apple-mart'>
-                     
+           
+
+
+
+
+
+       <Movie ref = {element4} variants = {fade} animate = {control4} initial = 'hidden'>
+                 <motion.h2 variants={fade}>Design Projects: <span>Snap Website</span> </motion.h2>
+                 <motion.div variants={lineAnim} className="line"></motion.div>
+                 
+                <Hide>
+                    <div className='apple-mart'>
+                      <div className="image-container">
+                 <img variants={photoAnim} src={Snap} alt='snap'/>
                       
-                   
+                 <div className='apple-overview'>
+                   <div className="apple-overview-contents">
+                    <div className="about-project">
+                        <p>A simple and user friendly design for a website</p>
+                    </div>
                     <div className="btn">
-                    <button style={{color: "black" , display: "flex", "align-items": "center", "margin-left": "40%", "margin-top": "20%"}}>Work in progress...</button>
+                    <a href='https://intro-sections.netlify.app/'><button>Preview</button></a>
+                    <a href='https://github.com/Godspower12/intro-section/'><button>Source Code</button></a>
+                   </div>
                    </div>
                  </div>
-                    
+                 </div>
+                 </div>
+                 </Hide>
+        
+            
+                
                  
+           </Movie>
+
+       <Movie ref = {element5} variants = {fade} animate = {control5} initial = 'hidden'>
+                 <motion.h2 variants={fade}>Design Projects: <span>Group chat app UI</span> </motion.h2>
+                 <motion.div variants={lineAnim} className="line"></motion.div>
                  
-
-
-            </Movie> 
-
-
+                <Hide>
+                    <div className='apple-mart'>
+                      <div className="image-container">
+                 <img variants={photoAnim} src={ChatPic} alt='snap'/>
+                      
+                 <div className='apple-overview'>
+                   <div className="apple-overview-contents">
+                    <div className="about-project">
+                        <p>A simple and user friendly design for a group chat app</p>
+                    </div>
+                    <div className="btn">
+                    <a href='https://chatappuis.netlify.app/'><button>Preview</button></a>
+                    <a href='https://github.com/Godspower12/chatapp-ui/'><button>Source Code</button></a>
+                   </div>
+                   </div>
+                 </div>
+                 </div>
+                 </div>
+                 </Hide>
+        
+            
+                
+                 
+           </Movie>
 
             
           
@@ -158,6 +181,11 @@ padding-bottom: 10rem;
     height: 0.5rem;
     background: #23d997;
     margin-bottom: 3rem;
+}
+
+span {
+  color: grey;
+  font-size: 3rem;
 }
 img {
 
