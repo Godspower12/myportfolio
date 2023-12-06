@@ -1,5 +1,5 @@
 
-import home1 from '../img/me.jpg';
+import Gp1 from '../img/gpdev1.jpg';
 import {About, Description, Image, Hide} from "../style"
 import {Link} from 'react-router-dom';
 import styled from "styled-components";
@@ -28,14 +28,14 @@ function AboutSection() {
                         ></motion.h2>
                     </Hd>
                 </motion.div>
-                <motion.h4 variants={fade}> UI/UX Designer and frontend web developer</motion.h4>
+                <motion.h4 variants={fade}> A Frontend Web Developer</motion.h4>
                <Btn>
                <Link to ='/contactMe'><motion.button variants={fade}>Contact Me</motion.button></Link>
                 <Link to ='/cv'><motion.button variants={fade}>CV</motion.button></Link>
                </Btn>
             </Description>
             <Img>
-                <motion.img variants={photoAnim} src={home1} alt="power" />
+                <motion.img variants={photoAnim} src={Gp1} alt="power" />
             </Img>
             <Wave/>
         </Abt>
@@ -63,6 +63,11 @@ h4 {
 const Img = styled(Image)`
 flex- 1;
 overflow: hidden;
+border-radius: 20px;
+
+@media screen and (max-width: 425px){
+    margin-left: -30px;
+  }
 img {
    width: 100%;
    height:90vh;
@@ -81,10 +86,12 @@ const Hd = styled(Hide)`
 `
 const Btn = styled(motion.div)`
  display: flex;
-justify-content: space-evenly;
+justify-content: flex-start;
+gap: 20px;
  button{
  border-radius: 10px;
- margin-right: 20px
+ 
+
   
  @media screen and (max-width: 425px){
        font-size: 10px; 

@@ -6,10 +6,10 @@ import {motion} from 'framer-motion';
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from "../components/Animation"
 import {useScroll} from '../components/useScroll';
 import Snap from "../img/desktop-design.jpg"
-import ChatPic from "../img/chatapp.png"
+import ChatPic from "../img/chatapp.png";
 import ProductImg from "../img/desktop-design1.jpg"
 
-const MyWork = () => {
+const Recent = () => {
   const [element, control] = useScroll();
   const [element2, control2] = useScroll();
   const [element3, control3] = useScroll();
@@ -20,19 +20,14 @@ const MyWork = () => {
          <Work exit = "exit" variants={pageAnimation} 
          initial = "hidden" 
          animate = "show"
-         style = {{background : "#fff"}}>
-             <motion.div variants = {sliderContainer}>
-             <Frame1 variants={slider}></Frame1>
-             <Frame2 variants={slider}></Frame2>
-             <Frame3 variants={slider}></Frame3>
-             <Frame4 variants={slider}></Frame4>
-             </motion.div>
+         style = {{background : "#1b1b1b"}}>
              
-
+             
+                 <h1>My projects</h1>
             
              <Movie ref = {element} variants = {fade} animate = {control} initial = 'hidden'>
-                 <motion.h2 variants={fade}>Apple Mart- E-commerce</motion.h2>
-                 <motion.h4 variants={fade}>E-commerce Website</motion.h4>
+                 <motion.h2 variants={fade}>Apple Mart</motion.h2>
+                 <motion.h4 variants={fade}>E-Commerce Website</motion.h4>
                  <motion.div variants={lineAnim} className="line"></motion.div>
                  
                 <Hide>
@@ -93,6 +88,10 @@ const MyWork = () => {
 
 
             </Movie> 
+           
+
+
+
             <Movie ref = {element3} variants = {fade} animate = {control3} initial = 'hidden'>
                 <h2>E-Commerce Product</h2>
                 <motion.div variants = {lineAnim} className="line"></motion.div>
@@ -121,7 +120,6 @@ const MyWork = () => {
 
             </Movie> 
            
-
 
 
 
@@ -194,13 +192,24 @@ const MyWork = () => {
 const Work = styled(motion.div)`
 min-height: 100vh;
 overflow: hidden;
-/* padding: 5rem 10rem; */
+ padding: 4rem 0rem;
 @media (max-width: 375px) {
     /* padding: ; */
 }
-
+ h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+ }
 h2{
     padding: 1rem 0rem;
+    color: white
+}
+h4{
+    
+    color: white
 }
 `;
 
@@ -300,4 +309,4 @@ background: #8effa0;
 
 
 
-export default MyWork;
+export default Recent;

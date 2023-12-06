@@ -11,41 +11,17 @@ const SkillSection = () => {
     
 <Services variants={scrollReveal} animate = {control} initial = 'hidden' ref={element}> 
         
-             <Cards>
-                <Card>     
-                <h2>UI/UX Designer</h2>    
-                <p>I value simple content structure, clean design patterns, and thoughtful interactions. </p>
-
-                <p><span>Things i enjoy designing:</span></p>
-                <p>UI, UX, Web, Apps, Logos</p>
-                <p><span>Design Tools:</span></p>
-                <p>Figma</p>
-                <p>Adobe XD</p>
-                <p>Photoshop</p>
-                <p>Fontawesome</p>
-
-                </Card>            
-               
-             
-              
-              <Card> 
-                <h2>Frontend Developer</h2>
-              
-                <p>I like to code things from the scratch, and enjoy bringing ideas to life in the browser. </p> 
-
-<p><span>Language I speak:</span></p>
-<p>HTML, CSS, Javascript, Sass, Git</p>
-<p><span>Dev Tools:</span></p>
-<p>Bitbucket</p>
-<p>Vscode</p>
-<p>Github</p>
-<p>Atom</p>
-
-              </Card>
-                 
-                
-             </Cards>
-
+           <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Angular</li>
+            <li>React</li>
+            <li>Typescript</li>
+            <li>Nextjs</li>
+           </ul>
              
              </Services>
 
@@ -63,66 +39,44 @@ export default SkillSection
 const Services = styled.div`
 height: 50%;
 display: flex;
-justify-content: space-around;
-// align-items: center;
-text-align: center;
-h2 {
-  color: black;
-  font-size: 2rem;
-  margin-top: 10px;
+justify-content: center;
+align-items: center;
+width: 100%;
+padding: 20px 20px;
+flex-wrap: wrap;
+overflow: hidden;
+
+// text-align: center;
+
+
+ul {
+  display: flex;
+  margin-left: 10%
+  flex-wrap: wrap;
+}
+li {
+  // list-style: none;
+  color: white;
+  width: 8rem
+  // font-size: 10rem;
+ 
 }
 
-span {
-  font-size: 1.5rem;
-}
+@media (max-width: 425px){
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10%;
+margin-left: 10px;
 
-// @media (max-width: 425px){
-//   display: flex;
-//   flex-direction: column;
+li {
+  font-size: 7px;
+  width: 5rem
+}
+};
+
   `;
   
-  
-  const Cards = styled.div`
-  width: 100%;
-  margin: 10%; 
-  // height: 100%;
-  display: flex;
-  justify-content: space-between;
-  
-  
-  
-
-  @media (max-width: 425px){
-   
-
-    };
-
-      `;
-
-const Card = styled.div`
-background: white;
-border-radius: 10%;
-margin-bottom: 40px;
-padding-bottom: 40px;
-padding: 0px 20px;
-width: 35%;
-
-h2 {
-  color: black;
-  margin-top: 10px;
-  font-size: 1.5rem;
-}
-
-
- @media (max-width: 425px){
-      padding: 5px;
-      margin-left: 10px;
-      width: 45%;
-
-      };
-      p {
-        color: black;
-        margin-bottom: -20px;
-        
-      }
-}`;
+ 
