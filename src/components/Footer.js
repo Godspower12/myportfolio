@@ -34,7 +34,7 @@ const Footer = () => {
 
     <div className="copyright">
     <p><FontAwesomeIcon icon = {faCopyright} color = "#28A4D9" size="sm"/>
-            2023 Godspower Felix. All rights reserved</p>
+            2024 Godspower Felix. All rights reserved</p>
         </div>
      </div>
   )

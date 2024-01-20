@@ -8,9 +8,11 @@ import {useScroll} from '../components/useScroll';
 import Snap from "../img/desktop-design.jpg"
 import ChatPic from "../img/chatapp.png";
 import ProductImg from "../img/desktop-design1.jpg"
+import Nike from "../img/nike.png"
 
 const Recent = () => {
   const [element, control] = useScroll();
+  const [element1, control1] = useScroll();
   const [element2, control2] = useScroll();
   const [element3, control3] = useScroll();
   const [element4, control4] = useScroll();
@@ -24,8 +26,42 @@ const Recent = () => {
              
              
                  <h1>My projects</h1>
+
+
+
+                 <Movie ref = {element} variants = {fade} animate = {control} initial = 'hidden'>
+                 <motion.h2 variants={fade}>Nike-E-commerce</motion.h2>
+                 <motion.h4 variants={fade}>E-commerce Website</motion.h4>
+                 <motion.div variants={lineAnim} className="line"></motion.div>
+                 
+                <Hide>
+                    <div className='apple-mart'>
+                      <div className="image-container">
+                 <img variants={photoAnim} src={Nike} alt='nike'/>
+                      
+                 <div className='apple-overview'>
+                   <div className="apple-overview-contents">
+                    <div className="about-project">
+                        <p>Nike is an e-commerce website for sales of Nike products</p>
+                    </div>
+                    <div className="btn">
+                    <a href='https://gp-nike.vercel.app/'><button>Preview</button></a>
+                    <a href='https://github.com/Godspower12/nike'><button>Source Code</button></a>
+                   
+
+                    </div>
+                   </div>
+                 </div>
+                 </div>
+                 </div>
+                 </Hide>
+        
             
-             <Movie ref = {element} variants = {fade} animate = {control} initial = 'hidden'>
+                
+                 
+           </Movie>
+            
+             <Movie ref = {element1} variants = {fade} animate = {control1} initial = 'hidden'>
                  <motion.h2 variants={fade}>Apple Mart</motion.h2>
                  <motion.h4 variants={fade}>E-Commerce Website</motion.h4>
                  <motion.div variants={lineAnim} className="line"></motion.div>
@@ -138,9 +174,10 @@ const Recent = () => {
                     <div className="about-project">
                         <p>A simple and user friendly design for a website</p>
                     </div>
-                    <div className="btn">
-                    <a href='https://intro-sections.netlify.app/'><button>Preview</button></a>
-                    <a href='https://github.com/Godspower12/intro-section/'><button>Source Code</button></a>
+                    <div className="">
+                      <h1>In progress...</h1>
+                    {/* <a href='https://intro-sections.netlify.app/'><button>Preview</button></a>
+                    <a href='https://github.com/Godspower12/intro-section/'><button>Source Code</button></a> */}
                    </div>
                    </div>
                  </div>
@@ -154,7 +191,7 @@ const Recent = () => {
            </Movie>
 
        <Movie ref = {element5} variants = {fade} animate = {control5} initial = 'hidden'>
-                 <motion.h2 variants={fade}>Group chat app UI </motion.h2>
+                 <motion.h2 variants={fade}>Group chat app </motion.h2>
                  <motion.div variants={lineAnim} className="line"></motion.div>
                  
                 <Hide>
@@ -165,11 +202,12 @@ const Recent = () => {
                  <div className='apple-overview'>
                    <div className="apple-overview-contents">
                     <div className="about-project">
-                        <p>A simple and user friendly design for a group chat app</p>
+                        <p>A simple and user friendly group chat app</p>
                     </div>
                     <div className="btn">
-                    <a href='https://chatappuis.netlify.app/'><button>Preview</button></a>
-                    <a href='https://github.com/Godspower12/chatapp-ui/'><button>Source Code</button></a>
+                    <h1>In progress...</h1>
+                    {/* <a href='https://chatappuis.netlify.app/'><button>Preview</button></a>
+                    <a href='https://github.com/Godspower12/chatapp-ui/'><button>Source Code</button></a> */}
                    </div>
                    </div>
                  </div>

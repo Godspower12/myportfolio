@@ -2,6 +2,7 @@ import React from 'react';
 import "../components/styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cvpic from "../img/cvpic.jpg"
+import Gp from "../img/gpdev3.jpg"
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot} from '@fortawesome/free-solid-svg-icons'
@@ -22,7 +23,7 @@ function Cv() {
         <h5>Frontend Web Developer</h5>
        </div>
        <div className = "image">
-   <img src={cvpic} alt="cvpic" />
+   <img src={Gp} alt="cvpic" />
        </div>
        </div>
        <div className="cv-body">
@@ -47,8 +48,16 @@ function Cv() {
                 <h4>Career Objective</h4>
                 <hr />
                 <h5>
-            To obtain a responsible and challenging Front End Developer’s position where my 
-            education and work experience will have valuable application.  
+                As a motivated and detail-oriented frontend developer,
+                 my goal is to leverage my skills to 
+                 contribute to innovative and user-friendly web applications. 
+                 Eager to collaborate with other experienced developers and designers, 
+                 I aim to enhance my proficiency in front-end technologies, responsive design,
+                  and user experience. My passion for creating visually appealing and intuitive
+                  interfaces, combined with my dedication to staying updated on emerging trends,
+                   positions me to make meaningful contributions to a dynamic development team.
+                 I am excited to embark on a rewarding journey of continuous learning and growth in 
+                 the ever-evolving field of frontend development
                 </h5>
             </div>
         </div>
@@ -67,12 +76,12 @@ function Cv() {
                 <h4>Educational Background</h4>
                 <hr />
                 <h5>
-                2013-2017	University of Benin, Benin City, Edo State         B.sc Accounting
+                2013-2017:	University of Benin, Benin City, Edo State         B.sc Accounting
                 </h5>
-                <h4>
-                2007 – 2013	      Uyi Secondary school, Benin City, Edo State
+                <h5>
+                2007 – 2013:	      Uyi Secondary school, Benin City, Edo State
 West Africa Senior School Certificate Examination
-                </h4>
+                </h5>
             </div>
         </div>
 
@@ -92,9 +101,9 @@ West Africa Senior School Certificate Examination
             <hr />
 
             <h4>
-            -Jan. 2022- April 2022: Frontend Web developer(Intern), RadicalX Virtual Internship Programme.
+            -Jan. 2022- April 2022: <span> <br /> Frontend Web developer(Intern), RadicalX Virtual Internship Programme.</span>
                </h4>
-               <h4>Responsibilities</h4>
+               <h3>Responsibilities</h3>
                <hr />
                <ul>
                 <li> Using markup languages like HTML to create user-friendly web pages.</li>
@@ -110,9 +119,9 @@ West Africa Senior School Certificate Examination
     
                 
                <h4>
-               -June. 2020-November 2021 : Website and social media manager, Titsall Global Schools, Wuse 2, Abuja.
+               -June. 2020-November 2021 : <span><br /> Website and social media manager, Titsall Global Schools, Wuse 2, Abuja.</span>
                </h4>
-               <h4>Responsibilities</h4>
+               <h3>Responsibilities</h3>
                <hr />
                <ul>
                 <li>Managing the school’s website and Social media (Facebook and instagram) handles.</li>
@@ -124,8 +133,8 @@ West Africa Senior School Certificate Examination
                </ul>
                <hr />
 
-             <h4>-September. 2019 – June 2020: Coding tutor/Instructor, Titsall Global Schools, Wuse 2, Abuja.</h4>
-             <h4>Responsibilities</h4>
+             <h4>-September. 2019 –June 2020: <span> <br />Coding tutor/Instructor, Titsall Global Schools, Wuse 2, Abuja.</span></h4>
+             <h3>Responsibilities</h3>
              <hr />
              <ul>
                 <li>Introducing coding with scratch to learners of various classes (coding for kids).</li>

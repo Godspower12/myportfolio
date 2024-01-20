@@ -20,7 +20,7 @@ function App() {
       <GlobalStyle/>
       <Nav/>
       <AnimatePresence exitBeforeEnter>
-      <Routes location = {location} key= {location.pathname}>
+      <Routes location = {location} key= {location.pathname} >
      <Route path="/" element={<AboutMe/>}/>
      <Route path="/mywork" element={<MyWork/>}/>
      <Route path="/contactme" element={<ContactMe/>}/>
